@@ -3,13 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Commerce Product Page</title>
+    <title>Artistic Excellence Page</title>
      <!-- Bootstrap CSS -->
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
      <!-- Custom CSS -->
-     <link href="style.css" rel="stylesheet">
+     <link href="./asset//style.css" rel="stylesheet">
 </head>
 <body>
-    
+    <div class="container my-5">
+        <h1 class="text-center mb-4"> Artistic Excellence and reproduction handmade designs</h1>
+        <div class="row">
+            <!-- Starry Night -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./asset/Images/Starry Night.jfif" class="card-img-top" alt="Starry Night">
+                    <div class="card-body">
+                        <h5 class="card-title">Starry Night</h5>
+                        <p class="card-text"> Vincent van Gogh</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal1">View Details</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Mona  lisa-->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./asset//Images/monalisa.jfif"  alt="Mona Lisa" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Mona Lisa</h5>
+                        <p class="card-text"> Leonardo da Vinci</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal2">View Details</button>
+                    </div>
+                </div>
+            </div>
+            <!--The kiss-->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./asset/Images/thekiss.jfif" alt="the kiss" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">The kiss</h5>
+                        <p class="card-text"> Gustav Klimt</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal3">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="productModal1" tabindex="-1" aria-labelledby="productModal1Label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="productModal1Label">Starry Night oil painting Details</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="./asset/Images/Starry Night.jfif" class="img-fluid mb-3" alt="Product 1">
+                        <p>Purchase a handmade, museum-quality reproduction of “Starry Night” by Vincent Van Gogh. This oil painting reproduction, meticulously hand-painted on canvas by one of our talented artists, captures the essence of Van Gogh's original masterpiece.
+                            Each reproduction of “Starry Night” comes with a free Certificate of Authenticity, verifying the authenticity of the fine art reproduction you have purchased, and free shipping directly to your door.</p>
+                        <p><b> $312.95 </b> for 20x16"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="productModal2"  tabindex="-1" aria-labelledby="productModal1Label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header" >
+                        <h5 class="modal-title" id="productModal1Label">Mona Lisa Details</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                        <div class="modal-body">
+                            <img src="./asset//Images/monalisa.jfif" class="img-fluid mb-3" alt="Product 2">
+                            <p>Purchase a handmade, museum-quality reproduction of “Mona Lisa (La Gioconda) c. 1503-05” by Leonardo Da Vinci. This oil painting reproduction, meticulously hand-painted on canvas by one of our talented artists, captures the essence of Da Vinci's original masterpiece. 
+                                Each reproduction of “Mona Lisa (La Gioconda) c. 1503-05” comes with a free Certificate of Authenticity, verifying the authenticity of the fine art reproduction you have purchased, and free shipping directly to your door.</p>
+                             <p>Regular Price: <span class="text-decoration-line-through">$801.90</span></p>
+                                <p><b>$400.95</b> for 20x30"</p>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="productModal3"  tabindex="-1" aria-labelledby="productModal1Label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header" >
+                        <h5 class="modal-title" id="productModal1Label">The Kiss Details</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                        <div class="modal-body">
+                            <img src="./asset//Images/thekiss.jfif" class="img-fluid mb-3" alt="Product 3">
+                            <p>Purchase a handmade, museum-quality reproduction of “"The Kiss" by Gustav Klimt” by Gustav Klimt. This oil painting reproduction, meticulously hand-painted on canvas by one of our talented artists, captures the essence of Klimt's original masterpiece.
+                                Each reproduction of “"The Kiss" by Gustav Klimt” comes with a free Certificate of Authenticity, verifying the authenticity of the fine art reproduction you have purchased, and free shipping directly to your door.</p>
+                             <p>Regular Price: <span class="text-decoration-line-through"> $ 625.90</span></p>
+                                <p>50% Sale <b> $ 312.95 </b> for 16x16" </p>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!-- Bootstrap JS -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
