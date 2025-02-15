@@ -16,3 +16,30 @@
 .card{
     padding: 3%;
 }
+.btn {
+    background-color: rgb(206, 138, 11);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+
+  .btn:hover {
+    background-color: rgb(190, 110, 11);
+  }
+
+  .btn:active {
+    background-color: orangered;
+  }
+  .table th, .table td {
+    vertical-align: middle;
+}
+.grand-total {
+    font-weight: bold;
+    color: #007bff;
+}
