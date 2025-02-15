@@ -5,4 +5,14 @@
     width: 100%;
    
 }
+/* Change the background color of the card on hover */
+.card:hover {
+    background-color: #f8f9fa; /* Light gray background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+    transform: scale(1.05); /* Slightly enlarge the card */
+    transition: all 0.3s ease; /* Smooth transition for the hover effect */
 
+}
+.card{
+    padding: 3%;
+}

@@ -10,8 +10,22 @@
      <link href="./asset//style.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container my-5">
-        <h1 class="text-center mb-4"> Artistic Excellence and reproduction handmade designs</h1>
+    <h1 class="text-center mb-4 p-3"><img src="./asset//Images/BlogLogopng.png" alt="logo" width="70px"> Artistic Excellence and reproduction handmade designs</h1>
+    <div class="text-center mb-4">
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="categoryDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+            Filter by Category
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="categoryDropdown">
+            <li><a class="dropdown-item" href="#">All</a></li>
+            <li><a class="dropdown-item" href="#">Electronics</a></li>
+            <li><a class="dropdown-item" href="#">Clothing</a></li>
+            <li><a class="dropdown-item" href="#">Accessories</a></li>
+        </ul>
+    </div>
+</div>
+    <div class="container my-5 contain-hover">
+      
         <div class="row">
             <!-- Starry Night -->
             <div class="col-md-4">
@@ -46,6 +60,34 @@
                     </div>
                 </div>
             </div>
+            <!-- The Girl with pearl earring-->
+             <div class="col-md-4">
+                <div class="card">
+                    <img src="./asset/Images/pearlWithgirl.jfif" alt="The girl with pearl earring" class="card-img-top">
+                    <div class="card-body"><h5 class="card-title">Girl with a Pearl Earring</h5>
+                        <p class="card-text"> Johannes Vermeer</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal4">View Details</button>
+                    </div>
+                </div>
+             </div>
+             <!--The last Supper-->
+             <div class="col-md-4">
+                <div class="card">
+                    <img src="./asset/Images/thelastsupper.jfif" alt="The last supper" class="card-img-top">
+                    <div class="card-body"><h5 class="card-title">The last supper 1498</h5>
+                        <p class="card-text"> Leonardo da Vinci</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal5">View Details</button>
+                    </div>
+                </div>
+             </div>
+             <!--Creation of Adam 1510-->
+             <div class="col-md-4"><div class="card">
+                <img src="./asset/Images/TheCreationofAdam.jfif" alt="Creation of Adam" class="card-img-top">
+                <div class="card-body"><h5 class="card-title">The Creation of Adam</h5>
+                    <p class="card-text"> Michelangelo Buonarotti</p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal6">View Details</button>
+                </div>
+             </div>
         </div>
         <div class="modal fade" id="productModal1" tabindex="-1" aria-labelledby="productModal1Label" aria-hidden="true">
             <div class="modal-dialog">
@@ -93,6 +135,57 @@
                                 Each reproduction of “"The Kiss" by Gustav Klimt” comes with a free Certificate of Authenticity, verifying the authenticity of the fine art reproduction you have purchased, and free shipping directly to your door.</p>
                              <p>Regular Price: <span class="text-decoration-line-through"> $ 625.90</span></p>
                                 <p>50% Sale <b> $ 312.95 </b> for 16x16" </p>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="productModal4"  tabindex="-1" aria-labelledby="productModal1Label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header" >
+                        <h5 class="modal-title" id="productModal1Label">A girl with pearl earring Details</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                        <div class="modal-body">
+                            <img src="./asset//Images/pearlWithgirl.jfif" class="img-fluid mb-3" alt="Product 4">
+                            <p>Purchase a handmade, museum-quality reproduction of “Girl with a Pearl Earring c. 1665” by Jan Vermeer Van Delft. This oil painting reproduction, meticulously hand-painted on canvas by one of our talented artists, captures the essence of Vermeer Van Delft's original masterpiece.
+                                Each reproduction of “Girl with a Pearl Earring c. 1665” comes with a free Certificate of Authenticity, verifying the authenticity of the fine art reproduction you have purchased, and free shipping directly to your door.</p>
+                                <p><b>$312.95 </b> for 15x18"</p>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="productModal5"  tabindex="-1" aria-labelledby="productModal1Label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header" >
+                        <h5 class="modal-title" id="productModal1Label">The Last Supper 1498</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                        <div class="modal-body">
+                            <img src="./asset//Images/thelastsupper.jfif" class="img-fluid mb-3" alt="Product 5">
+                            <p>Purchase a handmade, museum-quality reproduction of “The Last Supper 1498” by Leonardo Da Vinci. This oil painting reproduction, meticulously hand-painted on canvas by one of our talented artists, captures the essence of Da Vinci's original masterpiece.
+                                 Each reproduction of “The Last Supper 1498” comes with a free Certificate of Authenticity, verifying the authenticity of the fine art reproduction you have purchased, and free shipping directly to your door.</p>
+                                <p>Regular Price: <span class="text-decoration-line-through"> $ 741.90</span></p>
+                                 <p>50% Sale <b>$312.95 </b> for 31x16"</p>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+          <div class="modal fade" id="productModal6"  tabindex="-1" aria-labelledby="productModal1Label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header" >
+                        <h5 class="modal-title" id="productModal1Label">The Last Supper 1498</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                        <div class="modal-body">
+                            <img src="./asset//Images/TheCreationofAdam.jfif" class="img-fluid mb-3" alt="Product 6">
+                            <p>Purchase a handmade, museum-quality reproduction of “Creation of Adam 1510” by Michelangelo Buonarroti. This oil painting reproduction, meticulously hand-painted on canvas by one of our talented artists, captures the essence of Buonarroti's original masterpiece.
+                                 Each reproduction of “Creation of Adam 1510” comes with a free Certificate of Authenticity, verifying the authenticity of the fine art reproduction you have purchased, and free shipping directly to your door.</p>
+                                <p>Regular Price: <span class="text-decoration-line-through"> $ 6481.90</span></p>
+                                 <p>50% Sale <b> $3240.95 </b> for 224x110"</p>
                         </div>
                 </div>
             </div>
