@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .container {
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center mb-4">Shopping Cart</h1>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Starry Night</td>
+                    <td id="itemQuantity">1</td>
+                    <td>$312.95</td>
+                    <td id="itemTotal">$312.95</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="text-end">
+            <h4 id="grandTotal">Grand Total: $312.95</h4>
+            <button class="btn btn-primary mt-3" onclick="checkout()">Checkout</button>
+        </div>
+    </div>
+
+    <script>
+        // Fetch quantity from query parameter or fallback to default
+        const urlParams = new URLSearchParams(window.location.search);
+        const quantity = parseInt(urlParams.get('quantity')) || 1;
+        const price = 312.95;
+
+        // Update the quantity and total dynamically
+        document.getElementById('itemQuantity').textContent = quantity;
+        document.getElementById('itemTotal').textContent = `$${(price * quantity).toFixed(2)}`;
+        document.getElementById('grandTotal').textContent = `Grand Total: $${(price * quantity).toFixed(2)}`;
+
+        // Checkout button functionality
+        function checkout() {
+            alert("Thank you for your purchase!");
+            // Add additional functionality for checkout if needed
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
